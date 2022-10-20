@@ -1,9 +1,9 @@
-dist
 __pycache__
-*.pyc
-typer_cli.egg-info
-.pytest_cache
 .coverage
 .coverage.*
-poetry.lock
+.pytest_cache
+*.pyc
 coverage.xml
+dist
+poetry.lock
+typer_cli.egg-info
