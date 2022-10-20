@@ -15,11 +15,11 @@
     </a>
 </p>
 
-There is an optional utility tool called **Typer CLI**, additional to **Typer** itself.
+There is an optional utility tool called **Typer CLI**, in addition to **Typer** itself.
 
 It's main feature is to provide ✨ completion ✨ in the Terminal for your own small programs built with **Typer**.
 
-...without you having to create a complete installable Python package.
+... without you having to create a complete installable Python package.
 
 It's probably most useful if you have a small custom Python script using **Typer** (maybe as part of some project), for some small tasks, and it's not complex/important enough to create a whole installable Python package for it (something to be installed with `pip`).
 
@@ -208,7 +208,7 @@ if __name__ == "__main__":
     app()
 ```
 
-...you can also remove it if you are calling that script only with **Typer CLI** (using the `typer` command).
+... you can also remove it if you are calling that script only with **Typer CLI** (using the `typer` command).
 
 ## Run other files
 
