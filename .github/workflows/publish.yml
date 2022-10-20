@@ -7,9 +7,9 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v4
         with:
           python-version: "3.7"
       - name: Get full Python version
@@ -23,7 +23,7 @@ jobs:
       - name: Configure Poetry
         run: python -m poetry config virtualenvs.in-project true
       - name: Set up cache
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         id: cache
         with:
           path: .venv
