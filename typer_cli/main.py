@@ -2,10 +2,11 @@ import importlib.util
 import re
 import sys
 from pathlib import Path
-from typing import Any, Iterable, List, Optional, Tuple, cast
+from typing import Any, List, Optional, Tuple, cast
 
 import click
 import click.core
+import cloup
 import typer
 from click import Command, Group, Option
 from click._bashcomplete import get_choices as original_get_choices  # type: ignore
@@ -53,8 +54,8 @@ def maybe_update_state(ctx: click.Context) -> None:
         state.func = func_name
 
 
-class TyperCLIGroup(click.Group):
-    def list_commands(self, ctx: click.Context) -> Iterable[str]:
+class TyperCLIGroup(cloup.Group):
+    def list_commands(self, ctx: click.Context) -> List[str]:
         self.maybe_add_run(ctx)
         return super().list_commands(ctx)
 
@@ -74,7 +75,7 @@ class TyperCLIGroup(click.Group):
 def get_typer_from_module(module: Any) -> Optional[typer.Typer]:
     # Try to get defined app
     if state.app:
-        obj: typer.Typer = getattr(module, state.app, None)
+        obj = getattr(module, state.app, None)
         if not isinstance(obj, typer.Typer):
             typer.echo(f"Not a Typer object: --app {state.app}", err=True)
             sys.exit(1)
