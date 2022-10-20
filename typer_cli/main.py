@@ -190,7 +190,7 @@ def callback(
 
     $ typer --install-completion
 
-    https://typer.tiangolo.com/
+    https://alexreg-typer.netlify.app
     """
     maybe_update_state(ctx)
 

@@ -29,9 +29,9 @@ You can also use **Typer CLI** to generate Markdown documentation for your own *
 
 ---
 
-**Documentation**: <a href="https://typer.tiangolo.com/typer-cli/" target="_blank">https://typer.tiangolo.com/typer-cli/</a>
+**Documentation**: <a href="https://alexreg-typer.netlify.app/typer-cli/" target="_blank">https://alexreg-typer.netlify.app/typer-cli/</a>
 
-**Source Code for Typer CLI**: <a href="https://github.com/tiangolo/typer-cli" target="_blank">https://github.com/tiangolo/typer-cli</a>
+**Source Code for Typer CLI**: <a href="https://alexreg-typer.netlify.app/typer-cli/" target="_blank">https://github.com/alexreg/typer-cli</a>
 
 ---
 
