@@ -4,15 +4,15 @@
     <em>Run <strong>Typer</strong> scripts with completion, without having to create a package, using <strong>Typer CLI</strong>.</em>
 </p>
 <p align="center">
-<a href="https://travis-ci.com/tiangolo/typer-cli" target="_blank">
-    <img src="https://travis-ci.com/tiangolo/typer-cli.svg?branch=master" alt="Build Status">
-</a>
-<a href="https://codecov.io/gh/tiangolo/typer-cli" target="_blank">
-    <img src="https://img.shields.io/codecov/c/github/tiangolo/typer-cli" alt="Coverage">
-</a>
-<a href="https://pypi.org/project/typer-cli" target="_blank">
-    <img src="https://badge.fury.io/py/typer-cli.svg" alt="Package version">
-</a>
+    <a href="https://travis-ci.com/alexreg/typer-cli" target="_blank">
+        <img src="https://travis-ci.com/alexreg/typer-cli.svg?branch=master" alt="Build Status">
+    </a>
+    <a href="https://codecov.io/gh/alexreg/typer-cli" target="_blank">
+        <img src="https://img.shields.io/codecov/c/github/alexreg/typer-cli" alt="Coverage">
+    </a>
+    <a href="https://pypi.org/project/typer-cli" target="_blank">
+        <img src="https://badge.fury.io/py/typer-cli.svg" alt="Package version">
+    </a>
 </p>
 
 There is an optional utility tool called **Typer CLI**, additional to **Typer** itself.
