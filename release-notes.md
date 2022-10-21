@@ -2,6 +2,8 @@
 
 ## Latest Changes
 
+## 0.0.13
+
 * 🔧 Fix single-sourcing of package version
 * ⬆ Update build system
 * 📝 Add dependency *docstring_parser*
