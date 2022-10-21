@@ -2,6 +2,26 @@
 
 ## Latest Changes
 
+* 🔧 Fix single-sourcing of package version
+* ⬆ Update build system
+* 📝 Add dependency *docstring_parser*
+* ⬆ Update dependency *typer-cloup*
+* 📝 Do not prefix calls with `python -m` when unnecessary
+* 🐛 Fix Poetry set-up in GitHub workflows
+* ✨ Add support for Click 8
+* ✨ Migrate from *typer* to *typer-cloup*
+* ⬇️ Drop support for Python 3.6
+* 👷 Fix *poetry* commands in GitHub workflows
+* 👷 Update versions of actions in GitHub workflows
+* 👷 Fix formatting of GitHub workflows
+* 📝 Update copyright in license
+* 📝 Update docs to point to own site
+* ✏ Fix grammar/style in README
+* ✏ Fix indentation in README
+* 📝 Update project metadata
+* 🔧 Sort gitignore entries
+* ✅ Report coverage in XML
+
 ## 0.0.12
 
 * ✨ Move CI to GitHub Actions, remove dependency on `importlib-metadata`. This would fix use cases that also depend on `importlib-metadata` and could have conflicts, like installing `mkdocs`, as now `typer-cli` no longer depends on `importlib-metadata`. PR [#48](https://github.com/tiangolo/typer-cli/pull/48) by [@tiangolo](https://github.com/tiangolo).
