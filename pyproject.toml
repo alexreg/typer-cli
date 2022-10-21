@@ -48,7 +48,7 @@ packages = [
 colorama = "^0.4.4"
 python = "^3.7"
 shellingham = "^1.4.0"
-typer-cloup = "^0.5.0"
+typer-cloup = "^0.5.1"
 
 [tool.poetry.dev-dependencies]
 black = "^22.3.0"
