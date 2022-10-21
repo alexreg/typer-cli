@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "typer-cloup-cli"
-version = "0"
+version = "0.0.12"
 description = "Run Typer scripts with completion, without having to create a package, using Typer CLI."
 license = "MIT"
 authors = [
@@ -68,9 +68,6 @@ autoflake = "^1.4.0"
 
 [tool.poetry.scripts]
 typer = "typer_cli.main:main"
-
-[tool.poetry-version-plugin]
-source = "init"
 
 [tool.isort]
 profile = "black"

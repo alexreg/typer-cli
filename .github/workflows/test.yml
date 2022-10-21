@@ -22,6 +22,9 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Install package 'importlib_metadata'
+        if: matrix.python-version != '3.7'
+        run: pip install importlib_metadata
       # Allow debugging with tmate
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
