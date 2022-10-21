@@ -46,6 +46,7 @@ packages = [
 
 [tool.poetry.dependencies]
 colorama = "^0.4.4"
+docstring_parser = "^0.15"
 python = "^3.7"
 shellingham = "^1.4.0"
 typer-cloup = "^0.5.1"
