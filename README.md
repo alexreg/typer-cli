@@ -10,8 +10,8 @@
     <a href="https://codecov.io/gh/alexreg/typer-cli" target="_blank">
         <img src="https://img.shields.io/codecov/c/github/alexreg/typer-cli" alt="Coverage">
     </a>
-    <a href="https://pypi.org/project/typer-cli" target="_blank">
-        <img src="https://badge.fury.io/py/typer-cli.svg" alt="Package version">
+    <a href="https://pypi.org/project/typer-cloup-cli" target="_blank">
+        <img src="https://badge.fury.io/py/typer-cloup-cli.svg" alt="Package version">
     </a>
 </p>
 
@@ -78,9 +78,9 @@ Install **Typer CLI**:
 <div class="termy">
 
 ```console
-$ pip install typer-cli
+$ pip install typer-cloup-cli
 ---> 100%
-Successfully installed typer-cli
+Successfully installed typer-cloup-cli
 ```
 
 </div>
@@ -174,7 +174,7 @@ There's nothing wrong with using Python directly to run it. And, in fact, if som
 
 Here's where **Typer CLI** is useful.
 
-You can also run the same script with the `typer` command you get after installing `typer-cli`:
+You can also run the same script with the `typer` command you get after installing `typer-cloup-cli`:
 
 <div class="termy">
 
