@@ -1,7 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -ex
 
-set -e
-set -x
-
-# Use xdist-pytest --forked to ensure modified sys.path to import relative modules in examples keeps working
-pytest --cov=typer_cli --cov=tests --cov-report=term-missing --cov-report=xml -o console_output_style=progress --forked --numprocesses=auto ${@}
+# Use `xdist-pytest --forked` to ensure modified `sys.path` for importing relative modules in examples
+pytest --cov=typer_cli --cov=tests --cov-report=term-missing --cov-report=xml -o console_output_style=progress --forked --numprocesses=auto "$@"

@@ -1,7 +1,4 @@
-#!/usr/bin/env bash
-
-set -e
-set -x
+#!/usr/bin/env bash -ex
 
 mypy typer_cli
 black typer_cli tests --check
