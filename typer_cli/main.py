@@ -1,6 +1,5 @@
 import importlib.util
 import re
-import sys
 from pathlib import Path
 from typing import Any, List, Optional, cast
 
@@ -42,7 +41,7 @@ def maybe_update_state(ctx: click.Context) -> None:
                 typer.echo(
                     f"Not a valid file or Python module: {path_or_module}", err=True
                 )
-                sys.exit(1)
+                raise typer.Exit(1)
             state.module = path_or_module
     app_name = ctx.params.get("app")
     if app_name:
@@ -76,14 +75,14 @@ def get_typer_from_module(module: Any) -> Optional[typer.Typer]:
         obj = getattr(module, state.app, None)
         if not isinstance(obj, typer.Typer):
             typer.echo(f"Not a Typer object: --app {state.app}", err=True)
-            sys.exit(1)
+            raise typer.Exit(1)
         return obj
     # Try to get defined function
     if state.func:
         func_obj = getattr(module, state.func, None)
         if not callable(func_obj):
             typer.echo(f"Not a function: --func {state.func}", err=True)
-            sys.exit(1)
+            raise typer.Exit(1)
         sub_app = typer.Typer()
         sub_app.command()(func_obj)
         return sub_app
@@ -130,7 +129,7 @@ def get_typer_from_state() -> Optional[typer.Typer]:
             typer.echo(f"Could not import as Python file: {state.file}", err=True)
         else:
             typer.echo(f"Could not import as Python module: {state.module}", err=True)
-        sys.exit(1)
+        raise typer.Exit(1)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)  # type: ignore
     obj = get_typer_from_module(module)
