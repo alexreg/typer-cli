@@ -2,6 +2,14 @@
 
 ## Latest Changes
 
+* 👷 Fix definitions of manual inputs in GitHub workflows
+* 🔧 Rename package module to `typer_cloup_cli`
+* ⬆ Update dependency *typer-cloup* to 0.8.0
+* 🔧 Update scripts
+* ✨ Replace calls to `sys.exit()` with `raise typer.Exit()`
+* ✅ Add `pragma: no cover` to line only used with old Python
+* 📝 Update more docs to point to own site
+
 ## 0.0.13
 
 * 🔧 Fix single-sourcing of package version
