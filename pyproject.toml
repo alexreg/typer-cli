@@ -44,9 +44,6 @@ classifiers = [
     "Topic :: Utilities",
     "Typing :: Typed",
 ]
-packages = [
-    {include = "typer_cli"},
-]
 
 [tool.poetry.dependencies]
 colorama = "^0.4.4"
@@ -67,7 +64,7 @@ isort = "^5.10.1"
 autoflake = "^1.4.0"
 
 [tool.poetry.scripts]
-typer = "typer_cli.main:main"
+typer-cloup = "typer_cloup_cli.main:main"
 
 [tool.isort]
 profile = "black"

@@ -7,7 +7,7 @@ def test_script():
             "coverage",
             "run",
             "-m",
-            "typer_cli",
+            "typer_cloup_cli",
             "tests/assets/func_other_name.py",
             "run",
             "--name",

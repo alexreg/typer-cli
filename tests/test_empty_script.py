@@ -7,7 +7,7 @@ def test_script_help():
             "coverage",
             "run",
             "-m",
-            "typer_cli",
+            "typer_cloup_cli",
             "tests/assets/empty_script.py",
             "--help",
         ],

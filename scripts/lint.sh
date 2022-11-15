@@ -1,5 +1,5 @@
 #!/usr/bin/env bash -ex
 
-mypy typer_cli
-black typer_cli tests --check
-isort typer_cli tests --check-only
+mypy typer_cloup_cli
+black typer_cloup_cli tests --check
+isort typer_cloup_cli tests --check-only

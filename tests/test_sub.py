@@ -7,7 +7,7 @@ def test_script_hello():
             "coverage",
             "run",
             "-m",
-            "typer_cli",
+            "typer_cloup_cli",
             "tests/assets/sample.py",
             "run",
             "hello",
@@ -25,7 +25,7 @@ def test_script_hello_name():
             "coverage",
             "run",
             "-m",
-            "typer_cli",
+            "typer_cloup_cli",
             "tests/assets/sample.py",
             "run",
             "hello",
@@ -45,7 +45,7 @@ def test_script_hello_name_formal():
             "coverage",
             "run",
             "-m",
-            "typer_cli",
+            "typer_cloup_cli",
             "tests/assets/sample.py",
             "run",
             "hello",
@@ -62,7 +62,15 @@ def test_script_hello_name_formal():
 
 def test_script_bye():
     result = subprocess.run(
-        ["coverage", "run", "-m", "typer_cli", "tests/assets/sample.py", "run", "bye"],
+        [
+            "coverage",
+            "run",
+            "-m",
+            "typer_cloup_cli",
+            "tests/assets/sample.py",
+            "run",
+            "bye",
+        ],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         encoding="utf-8",
@@ -76,7 +84,7 @@ def test_script_bye_friend():
             "coverage",
             "run",
             "-m",
-            "typer_cli",
+            "typer_cloup_cli",
             "tests/assets/sample.py",
             "run",
             "bye",
@@ -91,7 +99,14 @@ def test_script_bye_friend():
 
 def test_script_help():
     result = subprocess.run(
-        ["coverage", "run", "-m", "typer_cli", "tests/assets/sample.py", "--help"],
+        [
+            "coverage",
+            "run",
+            "-m",
+            "typer_cloup_cli",
+            "tests/assets/sample.py",
+            "--help",
+        ],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         encoding="utf-8",
@@ -101,7 +116,14 @@ def test_script_help():
 
 def test_not_python():
     result = subprocess.run(
-        ["coverage", "run", "-m", "typer_cli", "tests/assets/not_python.txt", "run"],
+        [
+            "coverage",
+            "run",
+            "-m",
+            "typer_cloup_cli",
+            "tests/assets/not_python.txt",
+            "run",
+        ],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         encoding="utf-8",

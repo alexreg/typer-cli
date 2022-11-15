@@ -6,4 +6,3 @@ __pycache__
 coverage.xml
 dist
 poetry.lock
-typer_cli.egg-info

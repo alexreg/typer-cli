@@ -1,7 +1,7 @@
 [run]
 
 source =
-    typer_cli
+    typer_cloup_cli
     tests
 
 parallel = True
