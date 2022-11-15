@@ -5,8 +5,7 @@ from typing import Any, List, Optional, cast
 
 import click
 import click.core
-import typer
-import typer.core
+import typer_cloup as typer
 from click import Command, Group, Option
 
 from . import __version__

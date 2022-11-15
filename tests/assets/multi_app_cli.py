@@ -1,4 +1,4 @@
-import typer
+import typer_cloup as typer
 
 sub_app = typer.Typer()
 

@@ -42,7 +42,7 @@ You can also use **Typer CLI** to generate Markdown documentation for your own *
 You use **Typer** in your Python scripts. Like in:
 
 ```Python
-import typer
+import typer_cloup as typer
 
 
 def main():
@@ -107,7 +107,7 @@ Let's say you have a script that uses **Typer** in `my_custom_script.py`:
 ```Python
 from typing import Optional
 
-import typer
+import typer_cloup as typer
 
 app = typer.Typer()
 
@@ -299,7 +299,7 @@ When your run a script with the **Typer CLI** (the `typer` command) it will use 
 For example, you could have a script like:
 
 ```Python
-import typer
+import typer_cloup as typer
 
 app = typer.Typer(help="Awesome CLI user manager.")
 
