@@ -2,6 +2,8 @@
 
 ## Latest Changes
 
+## 0.1.0
+
 * 👷 Fix definitions of manual inputs in GitHub workflows
 * 🔧 Rename package module to `typer_cloup_cli`
 * ⬆ Update dependency *typer-cloup* to 0.8.0
