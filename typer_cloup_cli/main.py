@@ -175,7 +175,7 @@ def callback(
 
     $ typer --install-completion
 
-    https://alexreg-typer.netlify.app
+    https://typer-cloup.netlify.app
     """
     maybe_update_state(ctx)
 

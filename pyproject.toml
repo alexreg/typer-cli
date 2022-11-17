@@ -17,7 +17,7 @@ maintainers = [
 readme = "README.md"
 homepage = "https://github.com/alexreg/typer-cloup-cli"
 repository = "https://github.com/alexreg/typer-cloup-cli"
-documentation = "https://alexreg-typer.netlify.app/typer-cli/"
+documentation = "https://typer-cloup.netlify.app/typer-cli/"
 keywords = ["cli", "click", "cloup", "shell", "terminal", "typer"]
 classifiers = [
     "Development Status :: 4 - Beta",
