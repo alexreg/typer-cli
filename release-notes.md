@@ -2,6 +2,8 @@
 
 ## Latest Changes
 
+* ⬆ Update dependency *typer-cloup* to 0.9.0
+
 ## 0.1.0
 
 * 👷 Fix definitions of manual inputs in GitHub workflows
