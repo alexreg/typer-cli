@@ -29,7 +29,7 @@ def bye():
 
 
 app = typer.Typer(help="Demo App", epilog="The end")
-app.add_typer(sub_app, name="sub")
+app.add_sub(sub_app, name="sub")
 
 
 @app.command()

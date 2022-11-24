@@ -15,7 +15,7 @@ default_func_names = ("main", "cli", "app")
 
 app = typer.Typer()
 utils_app = typer.Typer(help="Extra utility commands for Typer apps.")
-app.add_typer(utils_app, name="utils")
+app.add_sub(utils_app, name="utils")
 
 
 class State:

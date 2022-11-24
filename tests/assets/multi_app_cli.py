@@ -14,7 +14,7 @@ def bye():
 
 
 cli = typer.Typer()
-cli.add_typer(sub_app, name="sub")
+cli.add_sub(sub_app, name="sub")
 
 
 @cli.command()
