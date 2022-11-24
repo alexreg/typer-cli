@@ -2,6 +2,8 @@
 
 ## Latest Changes
 
+## 0.2.0
+
 * ⬆ Update dependency *typer-cloup* to 0.9.0
 
 ## 0.1.0
