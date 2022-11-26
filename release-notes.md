@@ -2,6 +2,8 @@
 
 ## Latest Changes
 
+## 0.2.1
+
 * 📝 Miscellaneous improvements to docs
 * ⬆️ Update dependency `pytest-xdist`
 * ✏ Fix comment in `scripts/test.sh`
