@@ -2,6 +2,10 @@
 
 ## Latest Changes
 
+* 📝 Miscellaneous improvements to docs
+* ⬆️ Update dependency `pytest-xdist`
+* ✏ Fix comment in `scripts/test.sh`
+
 ## 0.2.0
 
 * ⬆ Update dependency *typer-cloup* to 0.9.0
