@@ -36,8 +36,8 @@ $ multiapp sub [OPTIONS] COMMAND [ARGS]...
 **Commands**:
 
 * `bye`: Say bye
-* `hello`: Say Hello
-* `hi`: Say Hi
+* `hello`: Say hello
+* `hi`: Say hi
 
 ### `multiapp sub bye`
 
@@ -55,7 +55,7 @@ $ multiapp sub bye [OPTIONS]
 
 ### `multiapp sub hello`
 
-Say Hello
+Say hello
 
 **Usage**:
 
@@ -71,7 +71,7 @@ $ multiapp sub hello [OPTIONS]
 
 ### `multiapp sub hi`
 
-Say Hi
+Say hi
 
 **Usage**:
 

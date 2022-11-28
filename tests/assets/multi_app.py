@@ -8,7 +8,7 @@ variable = "Some text"
 @sub_app.command()
 def hello(name: str = "World", age: int = typer.Option(0, help="The age of the user")):
     """
-    Say Hello
+    Say hello
     """
     typer.echo(f"Hello {name}")
 
@@ -16,8 +16,9 @@ def hello(name: str = "World", age: int = typer.Option(0, help="The age of the u
 @sub_app.command()
 def hi(user: str = typer.Argument("World", help="The name of the user to greet")):
     """
-    Say Hi
+    Say hi
     """
+    pass  # pragma: no cover
 
 
 @sub_app.command()
