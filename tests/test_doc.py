@@ -19,14 +19,14 @@ def test_doc():
         stderr=subprocess.PIPE,
         encoding="utf-8",
     )
-    docs_path: Path = Path(__file__).parent / "assets/multiapp-docs.md"
+    docs_path = Path(__file__).parent / "assets/multiapp-docs.md"
     docs = docs_path.read_text()
     assert docs in result.stdout
     assert "**Arguments**" in result.stdout
 
 
 def test_doc_output(tmp_path: Path):
-    out_file: Path = tmp_path / "out.md"
+    out_file = tmp_path / "out.md"
     result = subprocess.run(
         [
             "coverage",
@@ -45,7 +45,7 @@ def test_doc_output(tmp_path: Path):
         stderr=subprocess.PIPE,
         encoding="utf-8",
     )
-    docs_path: Path = Path(__file__).parent / "assets/multiapp-docs.md"
+    docs_path = Path(__file__).parent / "assets/multiapp-docs.md"
     docs = docs_path.read_text()
     written_docs = out_file.read_text()
     assert docs in written_docs
