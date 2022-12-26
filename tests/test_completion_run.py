@@ -10,8 +10,7 @@ def test_script_completion_run():
         encoding="utf-8",
         env={
             **os.environ,
-            "___MAIN__.PY_COMPLETE": "complete_bash",
-            "_PYTHON _M TYPER_CLOUP_CLI_COMPLETE": "complete_bash",
+            "_PYTHON _M TYPER_CLOUP_CLI_COMPLETE": "bash_complete",
             "COMP_WORDS": "typer tests/assets/sample.py",
             "COMP_CWORD": "2",
             "_TYPER_COMPLETE_TESTING": "True",
