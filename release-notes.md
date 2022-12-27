@@ -2,6 +2,8 @@
 
 ## Latest Changes
 
+## 0.3.0
+
 * ⬆ Update dependency *typer-cloup* to 0.10.0
 * ✏ Remove redundant type hints
 * ✏ Fix docstrings in `multi_app` test asset
